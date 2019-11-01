@@ -13,6 +13,7 @@
 		95C2B4FD236C80180069864E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95C2B4FC236C80180069864E /* Assets.xcassets */; };
 		95C2B500236C80180069864E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95C2B4FF236C80180069864E /* Preview Assets.xcassets */; };
 		95C2B503236C80180069864E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95C2B501236C80180069864E /* LaunchScreen.storyboard */; };
+		95C2B50C236C80A60069864E /* Hike.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C2B50B236C80A60069864E /* Hike.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		95C2B4FF236C80180069864E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		95C2B502236C80180069864E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		95C2B504236C80180069864E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95C2B50B236C80A60069864E /* Hike.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hike.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		95C2B4F5236C80160069864E /* HukingAppPopulatingListInSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				95C2B50A236C80830069864E /* Models */,
 				95C2B4F6236C80160069864E /* AppDelegate.swift */,
 				95C2B4F8236C80160069864E /* SceneDelegate.swift */,
 				95C2B4FA236C80160069864E /* ContentView.swift */,
@@ -73,6 +76,14 @@
 				95C2B4FF236C80180069864E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		95C2B50A236C80830069864E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				95C2B50B236C80A60069864E /* Hike.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +159,7 @@
 			files = (
 				95C2B4F7236C80160069864E /* AppDelegate.swift in Sources */,
 				95C2B4F9236C80160069864E /* SceneDelegate.swift in Sources */,
+				95C2B50C236C80A60069864E /* Hike.swift in Sources */,
 				95C2B4FB236C80160069864E /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
