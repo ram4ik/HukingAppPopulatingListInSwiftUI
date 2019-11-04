@@ -15,9 +15,7 @@ struct ContentView: View {
     var body: some View {
         
         List(self.hikes, id: \.name) { hike in
-            Text(hike.name)
-                .font(.largeTitle)
-                .padding()
+            HikeCell(hike: hike)
         }
     }
 }
@@ -25,5 +23,25 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+    }
+}
+
+struct HikeCell: View {
+    
+    let hike: Hike
+    
+    var body: some View {
+        HStack {
+            Image(hike.imageURL)
+                .resizable()
+                .frame(width: 100, height: 100)
+                .cornerRadius(16)
+            VStack(alignment: .leading) {
+                Text(hike.name)
+                    .font(.largeTitle)
+                    .padding()
+                Text(String(format: "%.2f", hike.miles))
+            }
+        }
     }
 }
